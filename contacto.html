@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Formulario de contacto para cotizaciones y soporte técnico de Conectec.">
+  <meta name="author" content="Humberto Rosas">
+  <title>Contacto | Conectec Seguridad Electrónica</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+
+  <main>
+
+    <!-- ============================= -->
+    <!-- ENCABEZADO CON MENÚ + CARRITO -->
+    <!-- ============================= -->
+    <section class="section-1">
+      <header class="header" role="banner">
+
+        <!-- LOGO -->
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/conectec-logo.png" alt="Logo Conectec">
+          </a>
+        </div>
+
+        <!-- MENÚ -->
+        <nav class="menu" role="navigation" aria-label="Menú principal">
+          <a href="index.html">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="servicios.html">Servicios</a>
+          <a href="catalogo.html">Catálogo</a>
+          <a href="galeria.html">Galería</a>
+          <a href="contacto.html" class="active">Contacto</a>
+        </nav>
+
+        <!-- BOTÓN DEL CARRITO -->
+        <div id="cart-root" class="cart-header-right">
+          <button id="cart-toggle">🛒 <span id="cart-count">0</span></button>
+        </div>
+
+      </header>
+    </section>
+
+    <!-- ============================= -->
+    <!-- PANEL DEL CARRITO GLOBAL -->
+    <!-- ============================= -->
+    <aside id="cart-panel" class="cart-panel" aria-hidden="true">
+
+      <header class="cart-header">
+        <h3>Carrito de Compras</h3>
+        <button id="cart-close" aria-label="Cerrar">✕</button>
+      </header>
+
+      <div id="cart-content">
+        <p class="empty">Tu carrito está vacío.</p>
+        <ul id="cart-items" class="cart-items"></ul>
+      </div>
+
+      <footer class="cart-footer">
+        <p>Total: <strong>S/<span id="cart-total">0.00</span></strong></p>
+
+        <div class="cart-actions">
+          <button id="cart-clear">Vaciar</button>
+          <button id="cart-checkout">Pagar</button>
+        </div>
+      </footer>
+
+    </aside>
+
+    <!-- ============================= -->
+    <!-- SECCIÓN DE CONTACTO -->
+    <!-- ============================= -->
+    <section class="contacto-section">
+
+      <header class="contacto-header">
+        <h1>Contáctanos</h1>
+        <p>
+          ¿Necesitas una cotización, soporte técnico o información sobre nuestros servicios?
+          Completa el formulario y un especialista de <strong>CONECTEC</strong> te responderá a la brevedad.
+        </p>
+      </header>
+
+      <!-- FORMULARIO -->
+      <form class="contact-form" id="contactForm" action="#" method="post" novalidate>
+
+        <div class="form-group">
+          <label for="nombre">👤 Nombre completo *</label>
+          <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+        </div>
+
+        <div class="form-group">
+          <label for="email">📧 Correo electrónico *</label>
+          <input type="email" id="email" name="email" required placeholder="tucorreo@ejemplo.com">
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">📞 Teléfono</label>
+          <input type="tel" id="telefono" name="telefono" pattern="[0-9\s+()-]{7,20}" placeholder="+51 9XXXXXXXX">
+        </div>
+
+        <div class="form-group">
+          <label for="servicio">💼 Servicio de interés *</label>
+          <select id="servicio" name="servicio" required>
+            <option value="">-- Selecciona --</option>
+            <option value="camaras">Cámaras de Seguridad</option>
+            <option value="alarmas">Sistemas de Alarma</option>
+            <option value="accesos">Control de Accesos</option>
+            <option value="redes">Redes y Cableado</option>
+            <option value="mantenimiento">Mantenimiento Técnico</option>
+            <option value="asesoria">Asesoría Personalizada</option>
+            <option value="otros">Otros</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">📝 Mensaje *</label>
+          <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Cuéntanos tu consulta..."></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+          <button type="reset" class="btn-reset">Limpiar</button>
+        </div>
+
+        <p id="status" role="status" aria-live="polite" class="form-status"></p>
+
+      </form>
+
+    </section>
+
+    <!-- ============================= -->
+    <!-- FOOTER -->
+    <!-- ============================= -->
+    <section class="section-5">
+      <footer class="footer" role="contentinfo">
+
+        <div class="footer-info">
+          <img src="img/conectec-logo.png" alt="Logo Conectec">
+          <p><strong>Conectec Seguridad</strong></p>
+          <p>Ilo - Moquegua, Perú</p>
+          <p>📧 info@conectecperu.com</p>
+          <p>📞 +51 977 969 280</p>
+        </div>
+
+        <div class="footer-copy">
+          <p>&copy; 2025 Conectec | Todos los derechos reservados</p>
+        </div>
+
+      </footer>
+    </section>
+
+    <!-- ============================= -->
+    <!-- VALIDACIÓN DEL FORMULARIO -->
+    <!-- ============================= -->
+    <script>
+      const form = document.getElementById('contactForm');
+      const status = document.getElementById('status');
+
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+
+        if (!form.checkValidity()) {
+          status.textContent = '⚠️ Por favor completa los campos obligatorios correctamente.';
+          status.className = 'status-error';
+          return;
+        }
+
+        status.textContent = '✅ Formulario enviado correctamente. Te contactaremos pronto.';
+        status.className = 'status-success';
+        form.reset();
+      });
+    </script>
+
+    <!-- CARRITO GLOBAL -->
+    <script src="js/main.js"></script>
+
+  </main>
+
+</body>
+</html>

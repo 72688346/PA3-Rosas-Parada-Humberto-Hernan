@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo | Conectec Seguridad Electrónica</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+<main>
+
+  <!-- Encabezado -->
+<section class="section-1">
+  <header class="header" role="banner">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/conectec-logo.png" alt="Logo Conectec">
+      </a>
+    </div>
+
+    <nav class="menu" role="navigation" aria-label="Menú principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html" class="active">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="galeria.html">Galería</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Carrito (FUERA del menú, como en index.html) -->
+<div id="cart-root" class="cart-header-right">
+  <button id="cart-toggle">🛒 <span id="cart-count">0</span></button>
+</div>
+  </header>
+</section>
+<!-- PANEL DEL CARRITO (DEBE ESTAR EN TODAS LAS PÁGINAS) -->
+<aside id="cart-panel" class="cart-panel" aria-hidden="true">
+  <header class="cart-header">
+    <h3>Carrito de Compras</h3>
+    <button id="cart-close" aria-label="Cerrar">✕</button>
+  </header>
+
+  <div id="cart-content">
+    <p class="empty">Tu carrito está vacío.</p>
+    <ul id="cart-items" class="cart-items"></ul>
+  </div>
+
+  <footer class="cart-footer">
+    <p>Total: <strong>S/<span id="cart-total">0.00</span></strong></p>
+
+    <div class="cart-actions">
+      <button id="cart-clear">Vaciar</button>
+      <button id="cart-checkout">Pagar</button>
+    </div>
+  </footer>
+</aside>
+
+
+<section class="servicios-principales">
+  <h1 class="titulo-seccion">Catálogo de Productos</h1>
+  <p class="intro-servicios">
+    Explora nuestra selección de equipos de seguridad electrónica de alta calidad,
+    disponibles para instalación inmediata. Todos los productos cuentan con garantía oficial
+    y soporte técnico especializado.
+  </p>
+
+  <div class="grid-servicios">
+
+    <!-- PRODUCTO 1 -->
+    <article class="card-servicio">
+      <img src="img/prod-camara1.webp" alt="Cámara Bullet HD">
+      <h3>📹 Cámara Bullet HD 1080p</h3>
+      <p>Cámara resistente a la intemperie con visión nocturna y lente de alta definición.</p>
+      <button class="btn-enviar add-to-cart" data-name="Cámara Bullet HD 1080p" data-price="159">Agregar al carrito</button>
+    </article>
+
+    <!-- PRODUCTO 2 -->
+    <article class="card-servicio">
+      <img src="img/prod-camara2.jpg" alt="Cámara Domo Full HD">
+      <h3>📷 Cámara Domo Full HD</h3>
+      <p>Cámara antivandálica ideal para interiores, con grabación en tiempo real.</p>
+      <button class="btn-enviar add-to-cart" data-name="Cámara Domo Full HD" data-price="139">Agregar al carrito</button>
+    </article>
+
+    <!-- PRODUCTO 3 -->
+    <article class="card-servicio">
+      <img src="img/prod-kit4.webp" alt="Kit de videovigilancia 4 cámaras">
+      <h3>📦 Kit DVR + 4 Cámaras HD</h3>
+      <p>Incluye grabador DVR, 4 cámaras HD, cables y app de monitoreo remoto.</p>
+      <button class="btn-enviar add-to-cart" data-name="Kit DVR + 4 Cámaras HD" data-price="699">Agregar al carrito</button>
+    </article>
+
+    <!-- PRODUCTO 4 -->
+    <article class="card-servicio">
+      <img src="img/prod-alarma1.webp" alt="Alarma inalámbrica WiFi">
+      <h3>🚨 Alarma Inalámbrica WiFi</h3>
+      <p>Alarma inteligente con sensores de puerta/ventana y control desde el celular.</p>
+      <button class="btn-enviar add-to-cart" data-name="Alarma Inalámbrica WiFi" data-price="249">Agregar al carrito</button>
+    </article>
+
+    <!-- PRODUCTO 5 -->
+    <article class="card-servicio">
+      <img src="img/prod-alarma2.webp" alt="Sensor de movimiento PIR">
+      <h3>🔎 Sensor PIR de Movimiento</h3>
+      <p>Sensor preciso para sistemas de alarma, compatible con múltiples marcas.</p>
+      <button class="btn-enviar add-to-cart" data-name="Sensor PIR de Movimiento" data-price="59">Agregar al carrito</button>
+    </article>
+
+    <!-- PRODUCTO 6 -->
+    <article class="card-servicio">
+      <img src="img/prod-biometrico.webp" alt="Control biométrico de accesos">
+      <h3>🔐 Control Biométrico RFID</h3>
+      <p>Equipo biométrico para control horario mediante huella o tarjeta RFID.</p>
+      <button class="btn-enviar add-to-cart" data-name="Control Biométrico RFID" data-price="379">Agregar al carrito</button>
+    </article>
+
+    <!-- PRODUCTO 7 -->
+    <article class="card-servicio">
+      <img src="img/prod-router.jpeg" alt="Router empresarial">
+      <h3>🌐 Router Empresarial AC</h3>
+      <p>Router de alta velocidad ideal para oficinas, con doble banda y gestión remota.</p>
+      <button class="btn-enviar add-to-cart" data-name="Router Empresarial AC" data-price="199">Agregar al carrito</button>
+    </article>
+
+<!-- PRODUCTO 8 -->
+<article class="card-servicio">
+  <img src="img/prod-hdmi.jpg" alt="Cable HDMI de alta velocidad">
+  <h3>🔌 Cable HDMI 4K Ultra HD</h3>
+  <p>Cable HDMI de alta velocidad compatible con 4K, HDR y Smart TV. Ideal para cámaras, monitores y decodificadores.</p>
+  <button class="btn-enviar add-to-cart" data-name="Cable HDMI 4K Ultra HD" data-price="29">Agregar al carrito</button>
+</article>
+
+    <!-- PRODUCTO 9 -->
+    <article class="card-servicio">
+      <img src="img/prod-dvr.webp" alt="Grabador DVR 8 canales">
+      <h3>💾 DVR 8 Canales Full HD</h3>
+      <p>Grabador digital de última generación con soporte para disco duro de 6TB.</p>
+      <button class="btn-enviar add-to-cart" data-name="DVR 8 Canales Full HD" data-price="299">Agregar al carrito</button>
+    </article>
+
+  </div>
+</section>
+
+  <!-- Footer -->
+  <section class="section-5">
+    <footer class="footer" role="contentinfo">
+      <div class="footer-info">
+        <img src="img/conectec-logo.png" alt="Logo Conectec">
+        <p><strong>Conectec Seguridad</strong></p>
+        <p>Ilo - Moquegua, Perú</p>
+        <p>📧 info@conectecperu.com</p>
+        <p>📞 +51 977 969 280</p>
+      </div>
+
+      <div class="footer-copy">
+        <p>&copy; 2025 Conectec | Todos los derechos reservados</p>
+      </div>
+    </footer>
+  </section>
+
+</main>
+
+<!-- Carrito global -->
+<script src="js/main.js"></script>
+</body>
+</html>

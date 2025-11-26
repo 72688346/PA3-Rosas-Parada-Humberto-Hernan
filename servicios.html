@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios | Conectec Seguridad Electrónica</title>
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <main>
+
+    <!-- Encabezado -->
+<section class="section-1">
+  <header class="header" role="banner">
+
+    <!-- LOGO -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/conectec-logo.png" alt="Logo Conectec">
+      </a>
+    </div>
+
+    <!-- MENÚ -->
+    <nav class="menu" role="navigation" aria-label="Menú principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html" class="active">Servicios</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="galeria.html">Galería</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- CARRITO (fuera del menú, igual que en index.html) -->
+    <div id="cart-root" class="cart-header-right">
+      <button id="cart-toggle">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+
+  </header>
+</section>
+
+
+<!-- PANEL DEL CARRITO (EL MISMO EN TODAS LAS PÁGINAS) -->
+<aside id="cart-panel" class="cart-panel" aria-hidden="true">
+  <header class="cart-header">
+    <h3>Carrito de Compras</h3>
+    <button id="cart-close" aria-label="Cerrar">✕</button>
+  </header>
+
+  <div id="cart-content">
+    <p class="empty">Tu carrito está vacío.</p>
+    <ul id="cart-items" class="cart-items"></ul>
+  </div>
+
+  <footer class="cart-footer">
+    <p>Total: <strong>S/<span id="cart-total">0.00</span></strong></p>
+
+    <div class="cart-actions">
+      <button id="cart-clear">Vaciar</button>
+      <button id="cart-checkout">Pagar</button>
+    </div>
+  </footer>
+</aside>
+
+
+
+    <!-- Sección principal de servicios -->
+    <section class="servicios-principales">
+      <h1 class="titulo-seccion">Nuestros Servicios</h1>
+      <p class="intro-servicios">
+        En <strong>CONECTEC</strong> ofrecemos soluciones tecnológicas personalizadas para hogares, empresas y proyectos industriales.
+        Combinamos experiencia, innovación y soporte técnico para brindar seguridad y eficiencia a cada cliente.
+      </p>
+
+      <div class="grid-servicios">
+        <article class="card-servicio">
+          <img src="img/camara1.webp" alt="Cámaras de seguridad HD">
+          <h3>📹 Cámaras de Seguridad</h3>
+          <p>Instalamos sistemas de videovigilancia con cámaras HD, visión nocturna y monitoreo remoto desde tu celular o PC.</p>
+        </article>
+
+        <article class="card-servicio">
+          <img src="img/alarma.jpg" alt="Sistemas de alarma">
+          <h3>🚨 Sistemas de Alarma</h3>
+          <p>Implementamos alarmas residenciales y empresariales con sensores de movimiento, apertura y notificaciones instantáneas.</p>
+        </article>
+
+        <article class="card-servicio">
+          <img src="img/control-acceso.jpg" alt="Control de accesos biométrico">
+          <h3>🔐 Control de Accesos</h3>
+          <p>Configuramos sistemas biométricos y tarjetas RFID para garantizar un control seguro y eficiente de tus espacios.</p>
+        </article>
+
+        <article class="card-servicio">
+          <img src="img/redes.webp" alt="Redes informáticas">
+          <h3>🌐 Redes y Cableado</h3>
+          <p>Diseñamos e instalamos redes informáticas estructuradas, racks y cableado de datos certificado para empresas.</p>
+        </article>
+
+        <article class="card-servicio">
+          <img src="img/mantenimiento.jpg" alt="Mantenimiento técnico">
+          <h3>🛠️ Mantenimiento Técnico</h3>
+          <p>Realizamos mantenimiento preventivo y correctivo de equipos informáticos y sistemas de videovigilancia.</p>
+        </article>
+
+        <article class="card-servicio">
+          <img src="img/asesoria.webp" alt="Asesoría técnica">
+          <h3>💼 Asesoría Tecnológica</h3>
+          <p>Brindamos consultoría para proyectos de tecnología, seguridad y conectividad en empresas privadas y mineras.</p>
+        </article>
+      </div>
+    </section>
+
+
+
+    <!-- Comparativa de servicios -->
+    <section class="comparativa-servicios">
+      <h2 class="titulo-seccion">Comparativa de Soluciones</h2>
+      <p class="intro-seccion">
+        En <strong>CONECTEC</strong> ofrecemos una amplia gama de soluciones tecnológicas adaptadas a cada necesidad.
+        Compara nuestras opciones y elige la que mejor se ajuste a tu hogar, empresa o industria.
+      </p>
+
+      <div class="table-wrapper">
+        <table class="tabla-comparativa" aria-label="Tabla comparativa de servicios Conectec">
+          <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Descripción</th>
+              <th>Tipo de Cliente</th>
+              <th>Implementación</th>
+              <th>Garantía</th>
+              <th>Soporte</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>📹 Cámaras de Seguridad</td>
+              <td>Sistemas HD con grabación continua, visión nocturna y monitoreo por app móvil.</td>
+              <td>Hogar / Empresa</td>
+              <td>3 - 5 días</td>
+              <td>12 meses</td>
+              <td>✔️ Soporte remoto 24/7</td>
+            </tr>
+
+            <tr>
+              <td>🚨 Sistemas de Alarma</td>
+              <td>Alarmas inteligentes con sensores y alertas instantáneas.</td>
+              <td>Residencial / Comercial</td>
+              <td>2 - 4 días</td>
+              <td>18 meses</td>
+              <td>✔️ Presencial y remoto</td>
+            </tr>
+
+            <tr>
+              <td>🔐 Control de Accesos</td>
+              <td>Lectores biométricos y tarjetas RFID con software de control horario.</td>
+              <td>Empresas / Edificios</td>
+              <td>4 - 6 días</td>
+              <td>12 meses</td>
+              <td>✔️ Técnico especializado</td>
+            </tr>
+
+            <tr>
+              <td>🌐 Redes Informáticas</td>
+              <td>Cableado estructurado, racks y routers empresariales.</td>
+              <td>Corporativo / Industrial</td>
+              <td>5 - 7 días</td>
+              <td>24 meses</td>
+              <td>✔️ Mantenimiento anual</td>
+            </tr>
+
+            <tr>
+              <td>🛠️ Mantenimiento Técnico</td>
+              <td>Soporte preventivo y correctivo de equipos informáticos.</td>
+              <td>Empresas / Hogares</td>
+              <td>Según diagnóstico</td>
+              <td>6 meses</td>
+              <td>✔️ Visitas programadas</td>
+            </tr>
+
+            <tr>
+              <td>💼 Asesoría Tecnológica</td>
+              <td>Consultoría para implementación de sistemas de seguridad y redes.</td>
+              <td>Privado / Minero</td>
+              <td>Según proyecto</td>
+              <td>12 meses</td>
+              <td>✔️ Consultor asignado</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+
+    <!-- FOOTER -->
+    <section class="section-5">
+      <footer class="footer" role="contentinfo">
+        <div class="footer-info">
+          <img src="img/conectec-logo.png" alt="Logo Conectec">
+          <p><strong>Conectec Seguridad</strong></p>
+          <p>Ilo - Moquegua, Perú</p>
+          <p>📧 info@conectecperu.com</p>
+          <p>📞 +51 977 969 280</p>
+        </div>
+
+        <div class="footer-copy">
+          <p>&copy; 2025 Conectec | Todos los derechos reservados</p>
+        </div>
+      </footer>
+    </section>
+
+  </main>
+
+<!-- MAIN.JS GLOBAL -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

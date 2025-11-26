@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Galería de proyectos y equipos Conectec.">
+  <meta name="author" content="Humberto Rosas">
+  <title>Galería | Conectec Seguridad Electrónica</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/estilo.css">
+  <script src="js/main.js" defer></script>
+</head>
+
+<body>
+<main>
+
+<!-- =========================
+     ENCABEZADO
+========================= -->
+<section class="section-1">
+  <header class="header" role="banner">
+
+    <!-- Logo -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/conectec-logo.png" alt="Logo Conectec Seguridad Electrónica">
+      </a>
+    </div>
+
+    <!-- Menú principal -->
+    <nav class="menu" role="navigation" aria-label="Menú principal">
+      <a href="index.html">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="servicios.html">Servicios</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="galeria.html" class="active">Galería</a>
+      <a href="contacto.html">Contacto</a>
+    </nav>
+
+    <!-- Carrito (fuera del menú) -->
+    <div id="cart-root" class="cart-header-right">
+      <button id="cart-toggle" aria-label="Abrir carrito">
+        🛒 <span id="cart-count">0</span>
+      </button>
+    </div>
+
+  </header>
+</section>
+
+<!-- =========================
+     PANEL DEL CARRITO
+========================= -->
+<aside id="cart-panel" class="cart-panel" aria-hidden="true">
+
+  <header class="cart-header">
+    <h3>Carrito de Compras</h3>
+    <button id="cart-close" aria-label="Cerrar carrito">✕</button>
+  </header>
+
+  <div id="cart-content">
+    <p class="empty">Tu carrito está vacío.</p>
+    <ul id="cart-items" class="cart-items"></ul>
+  </div>
+
+  <footer class="cart-footer">
+    <p>Total: <strong>S/<span id="cart-total">0.00</span></strong></p>
+
+    <div class="cart-actions">
+      <button id="cart-clear">Vaciar</button>
+      <button id="cart-checkout">Pagar</button>
+    </div>
+  </footer>
+
+</aside>
+
+
+<!-- =========================
+     GALERÍA PRINCIPAL
+========================= -->
+<section class="galeria-section">
+
+  <header class="galeria-header">
+    <h1>Galería de Proyectos</h1>
+    <p>
+      En <strong>CONECTEC</strong> presentamos una selección de nuestros 
+      <strong>proyectos instalados</strong> en cámaras de seguridad, redes y sistemas electrónicos.
+    </p>
+  </header>
+
+  <div class="galeria-grid">
+
+    <figure>
+      <img src="img/proyecto1.jpg" alt="Instalación de cámaras en oficina moderna">
+      <figcaption>Instalación de cámaras — Oficina moderna</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/proyecto2.jpg" alt="Red de videovigilancia en almacén">
+      <figcaption>Videovigilancia en almacén logístico</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/proyecto3.webp" alt="Centro de monitoreo CCTV">
+      <figcaption>Centro de monitoreo CCTV — Residencial Country</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/proyecto4.jpg" alt="Cableado estructurado empresarial">
+      <figcaption>Cableado estructurado — Empresa privada</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/proyecto5.webp" alt="Cámaras exteriores con IA">
+      <figcaption>Cámaras exteriores con IA</figcaption>
+    </figure>
+
+    <figure>
+      <img src="img/proyecto6.png" alt="Redes industriales">
+      <figcaption>Redes industriales — Central Eólica Wayra</figcaption>
+    </figure>
+
+  </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+<section class="section-5">
+  <footer class="footer" role="contentinfo">
+
+    <div class="footer-info">
+      <img src="img/conectec-logo.png" alt="Logo Conectec">
+      <p><strong>Conectec Seguridad</strong></p>
+      <p>Ilo - Moquegua, Perú</p>
+      <p>📧 info@conectecperu.com</p>
+      <p>📞 +51 977 969 280</p>
+    </div>
+
+    <div class="footer-copy">
+      <p>&copy; 2025 Conectec | Todos los derechos reservados</p>
+    </div>
+
+  </footer>
+</section>
+
+</main>
+</body>
+</html>

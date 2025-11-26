@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Conectec - Especialistas en seguridad electrónica, videovigilancia, alarmas y control de accesos. Protegemos lo que más valoras.">
+  <meta name="author" content="Humberto Rosas">
+  <title>Conectec | Soluciones en Seguridad Electrónica</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<body>
+  <main>
+
+    <!-- Encabezado -->
+<section class="section-1">
+<header class="header" role="banner">
+  <div class="logo">
+    <a href="index.html">
+      <img src="img/conectec-logo.png" alt="Logo de Conectec Seguridad Electrónica">
+    </a>
+  </div>
+
+  <nav class="menu" role="navigation" aria-label="Menú principal">
+    <a href="index.html">Inicio</a>
+    <a href="nosotros.html">Nosotros</a>
+    <a href="servicios.html">Servicios</a>
+    <a href="catalogo.html">Catálogo</a>
+    <a href="galeria.html">Galería</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+
+  <!-- Carrito (fuera del menú SIEMPRE) -->
+<div id="cart-root" class="cart-header-right">
+  <button id="cart-toggle">🛒 <span id="cart-count">0</span></button>
+</div>
+
+</header>
+
+</section>
+<!-- PANEL DEL CARRITO (DEBE ESTAR EN TODAS LAS PÁGINAS) -->
+<aside id="cart-panel" class="cart-panel" aria-hidden="true">
+  <header class="cart-header">
+    <h3>Carrito de Compras</h3>
+    <button id="cart-close" aria-label="Cerrar">✕</button>
+  </header>
+
+  <div id="cart-content">
+    <p class="empty">Tu carrito está vacío.</p>
+    <ul id="cart-items" class="cart-items"></ul>
+  </div>
+
+  <footer class="cart-footer">
+    <p>Total: <strong>S/<span id="cart-total">0.00</span></strong></p>
+
+    <div class="cart-actions">
+      <button id="cart-clear">Vaciar</button>
+      <button id="cart-checkout">Pagar</button>
+    </div>
+  </footer>
+</aside>
+
+    <!-- Sección de bienvenida -->
+    <section class="section-2" id="inicio">
+      <article class="bienvenida">
+        <h1>Conectec</h1>
+        <h2>Conectando Tecnología y Seguridad</h2>
+        <p>
+          Somos una empresa especializada en <strong>soluciones de seguridad electrónica</strong>:
+          cámaras de videovigilancia, sistemas de alarmas, redes y control de accesos.
+          Brindamos innovación, soporte técnico y confianza en cada instalación.
+        </p><br>
+        <a href="contacto.html" class="btn-enviar no-underline" style="margin-top:1em;">
+          Solicitar Cotización
+        </a>
+      </article>
+
+      <figure class="banner">
+        <picture>
+          <source srcset="img/camaras-banner.jpg" media="(min-width:600px)">
+          <img src="img/camaras-banner.jpg" alt="Cámaras de seguridad en instalación profesional" loading="lazy">
+        </picture>
+      </figure>
+    </section>
+
+    <!-- Servicios principales -->
+    <section class="section-3" id="servicios">
+      <h2 class="titulo-seccion">Nuestros Servicios</h2>
+
+      <div class="servicios">
+        <article class="servicio">
+          <img src="img/camara1.webp" alt="Instalación de cámaras de videovigilancia">
+          <h3>Cámaras de Seguridad</h3>
+          <p>Instalación profesional de cámaras HD y sistemas IP con acceso remoto, monitoreo 24/7 y grabación inteligente.</p>
+        </article>
+
+        <article class="servicio">
+          <img src="img/alarma.jpg" alt="Sistema de alarmas">
+          <h3>Sistemas de Alarma</h3>
+          <p>Alarmas residenciales y empresariales con sensores de movimiento, humo y notificaciones automáticas al instante.</p>
+        </article>
+
+        <article class="servicio">
+          <img src="img/control-acceso.jpg" alt="Control biométrico de accesos">
+          <h3>Control de Accesos</h3>
+          <p>Soluciones con huella, tarjeta o reconocimiento facial, integradas para empresas, industrias y edificios modernos.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Resumen de Beneficios -->
+    <section class="section-3b">
+      <h2 class="titulo-seccion">Resumen de Beneficios</h2>
+      <p class="intro-seccion">
+        Compara nuestros servicios y descubre por qué Conectec es tu mejor opción en seguridad electrónica.
+      </p>
+
+      <div class="table-wrapper">
+        <table class="mini-table" aria-label="Comparativa de beneficios Conectec">
+          <thead>
+            <tr>
+              <th>Servicio</th>
+              <th>Características principales</th>
+              <th>Monitoreo</th>
+              <th>Garantía</th>
+              <th>Instalación Profesional</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td><strong>Cámaras de Seguridad</strong></td>
+              <td>Alta definición, visión nocturna, grabación inteligente.</td>
+              <td>24/7 Remoto</td>
+              <td>2 años</td>
+              <td>Sí</td>
+            </tr>
+            <tr>
+              <td><strong>Sistemas de Alarma</strong></td>
+              <td>Detección de movimiento, humo y alertas instantáneas.</td>
+              <td>Automático</td>
+              <td>1 año</td>
+              <td>Sí</td>
+            </tr>
+            <tr>
+              <td><strong>Control de Accesos</strong></td>
+              <td>Biométrico, tarjetas RFID, registro de usuarios.</td>
+              <td>Opcional</td>
+              <td>2 años</td>
+              <td>Sí</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Proyectos recientes -->
+    <section class="section-4">
+      <h2 class="titulo-seccion">Proyectos Recientes</h2>
+      <p class="intro-seccion">
+        Conoce algunos de nuestros proyectos de seguridad electrónica y redes realizados en Ilo y el sur del Perú.
+      </p><br>
+      <div class="galeria galeria-proyectos">
+        <figure>
+          <a href="galeria.html">
+            <img src="img/proyecto1.jpg" alt="Instalación de cámaras en oficina moderna">
+          </a>
+          <figcaption>Instalación de cámaras en oficina moderna - Katherine Pacorí Studio</figcaption>
+        </figure>
+
+        <figure>
+          <a href="galeria.html">
+            <img src="img/proyecto2.jpg" alt="Red de videovigilancia en almacén">
+          </a>
+          <figcaption>Red de videovigilancia en almacén - Transportes Halcón SRL</figcaption>
+        </figure>
+
+        <figure>
+          <a href="galeria.html">
+            <img src="img/proyecto3.webp" alt="Centro de monitoreo CCTV">
+          </a>
+          <figcaption>Centro de monitoreo CCTV - Residencial Country</figcaption>
+        </figure>
+
+        <figure>
+          <a href="galeria.html">
+            <img src="img/proyecto4.jpg" alt="Cableado estructurado empresarial">
+          </a>
+          <figcaption>Cableado estructurado empresarial - Central Solar Rubí</figcaption>
+        </figure>
+      </div>
+      <br>
+      <div class="ver-galeria">
+        <a href="galeria.html" class="btn-enviar no-underline">Ver galería completa</a>
+      </div>
+    </section>
+
+    <!-- Llamada a la acción -->
+    <section class="section-cta">
+      <h2>¿Listo para proteger tu empresa o tu hogar?</h2>
+      <p>En Conectec transformamos tu seguridad con tecnología confiable y atención personalizada.</p>
+      </p><a href="contacto.html" class="btn-enviar no-underline">Contáctanos Ahora</a>
+    </section>
+
+    <!-- Footer -->
+    <section class="section-5">
+      <footer class="footer" role="contentinfo">
+        <div class="footer-info">
+          <img src="img/conectec-logo.png" alt="Logo Conectec">
+          <p><strong>Conectec Seguridad</strong></p>
+          <p>Ilo - Moquegua, Perú</p>
+          <p>📧 info@conectecperu.com</p>
+          <p>📞 +51 977 969 280</p>
+        </div>
+
+        <div class="footer-copy">
+          <p>&copy; 2025 Conectec | Todos los derechos reservados</p>
+        </div>
+      </footer>
+    </section>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>
